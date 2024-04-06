@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBluetooth"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:onClick="GetBluetoothActivity"
+            android:text="Bluetooth" />
+
+        <Button
+            android:id="@+id/btnWiFi"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnBluetooth"
+            android:onClick="GetWiFiActivity"
+            android:text="Wi-Fi" />
+
+        <Button
+            android:id="@+id/btnNFC"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnWiFi"
+            android:onClick="GetNFC_Activity"
+            android:text="NFC" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMobileData"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"			
+            android:text="Mobile Data" />
+
+        <Button
+            android:id="@+id/btnDial"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnMobileData"
+            android:text="Phone Call" />
+
+        <Button
+            android:id="@+id/btnGetSignalStrength"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnDial"
+            android:text="Signal" />
+
+    </RelativeLayout> 
+    
+</LinearLayout>
